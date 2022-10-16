@@ -1,9 +1,16 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+test("renders construction info and a link to our Facebook", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const constructionInfo = screen.getByText(/Strona w budowie/i);
+  expect(constructionInfo).toBeInTheDocument();
+
+  const link = screen.getByRole("link", { name: /facebook/i });
+  expect(link).toBeInTheDocument();
+  expect(link).toHaveAttribute(
+    "href",
+    "https://www.facebook.com/Klub.Studencki.Bajer/"
+  );
 });

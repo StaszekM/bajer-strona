@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Candice';
+  src: url('assets/Candice_woff2.woff') format('woff2');
+  src: url('assets/Candice.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-image: url("assets/bajeroland-2019.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.root2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 50%;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+@media all and (max-width: 600px) {
+  .container {
+      width: 100%;
+  }
+}
+
+.white-text {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-family: 'Candice', sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: cyan;
 }
