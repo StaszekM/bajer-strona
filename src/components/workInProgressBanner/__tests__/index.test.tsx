@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
-import App from "..";
+import { WorkInProgressBanner } from "../WorkInProgressBanner";
 
 test("renders construction info and a link to our Facebook", () => {
-  render(<App />);
+  render(<WorkInProgressBanner />);
   const constructionInfo = screen.getByText(/Strona w budowie/i);
   expect(constructionInfo).toBeInTheDocument();
 
