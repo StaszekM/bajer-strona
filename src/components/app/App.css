@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Candice';
-  src: url('assets/Candice_woff2.woff') format('woff2');
-  src: url('assets/Candice.woff') format('woff');
+  src: url('/src/assets/Candice.woff') format('woff2');
+  src: url('/src/assets/Candice_woff2.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background-image: url("assets/bajeroland-2019.jpg");
+  background-image: url("/src/assets/bajeroland-2019.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

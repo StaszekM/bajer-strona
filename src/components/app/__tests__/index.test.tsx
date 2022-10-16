@@ -1,6 +1,5 @@
-import React from "react";
 import { render, screen } from "@testing-library/react";
-import App from "./App";
+import App from "..";
 
 test("renders construction info and a link to our Facebook", () => {
   render(<App />);
