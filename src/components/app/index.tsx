@@ -3,9 +3,11 @@ import { WorkInProgressBanner } from "../workInProgressBanner/WorkInProgressBann
 
 function App() {
   return (
-    <div className="main">
-      <WorkInProgressBanner />
-    </div>
+    <>
+      <div className="main">
+        <WorkInProgressBanner />
+      </div>
+    </>
   );
 }
 
