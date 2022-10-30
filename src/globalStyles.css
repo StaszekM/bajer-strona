@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Candice";
+  src: url("/src/assets/Candice.woff") format("woff2");
+  src: url("/src/assets/Candice_woff2.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.bajer-font {
+  font-family: "Candice", sans-serif;
+}
