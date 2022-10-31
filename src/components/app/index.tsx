@@ -1,14 +1,12 @@
 import { AppNavbar } from "../navbar";
 import "../../globalStyles.css";
-import { WelcomeBanner } from "../welcomeBanner";
-import { AboutUsBanner } from "../aboutUsBanner";
+import { Outlet } from "react-router";
 
 function App() {
   return (
     <>
       <AppNavbar />
-      <WelcomeBanner />
-      <AboutUsBanner />
+      <Outlet />
     </>
   );
 }

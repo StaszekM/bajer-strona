@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { Link } from "react-router-dom";
 import "../../globalStyles.css";
 
 export function AppNavbar() {
@@ -12,8 +13,8 @@ export function AppNavbar() {
       sticky="top"
     >
       <Container fluid className="mx-lg-5">
-        <Navbar.Brand className="bajer-font fs-2" href="/">
-          Bajer
+        <Navbar.Brand className="bajer-font fs-2">
+          <Link to="/">Bajer</Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse

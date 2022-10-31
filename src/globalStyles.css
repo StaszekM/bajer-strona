@@ -19,3 +19,12 @@ html {
 .bajer-font {
   font-family: "Candice", sans-serif;
 }
+
+body a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body a:hover {
+  color: inherit;
+}

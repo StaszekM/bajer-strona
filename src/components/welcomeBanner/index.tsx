@@ -13,9 +13,7 @@ export function WelcomeBanner() {
         </Row>
         <Row>
           <Col className="mx-auto text-center bajer-font">
-            <h3 className="text-white">
-              Nagłośnienie | Oświetlenie | Integracje
-            </h3>
+            <h3>Nagłośnienie | Oświetlenie | Integracje</h3>
           </Col>
         </Row>
       </Container>

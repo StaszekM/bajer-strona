@@ -1,4 +1,5 @@
 import { AboutUsBanner } from "../components/aboutUsBanner";
+import { ManagementPhotoGalleryBanner } from "../components/managementPhotoGalleryBanner";
 import { WelcomeBanner } from "../components/welcomeBanner";
 
 export function MainPage() {
@@ -6,6 +7,7 @@ export function MainPage() {
     <>
       <WelcomeBanner />
       <AboutUsBanner />
+      <ManagementPhotoGalleryBanner />
     </>
   );
 }

@@ -4,12 +4,12 @@ export function AboutUsBanner() {
   return (
     <Container className="my-4">
       <Row>
-        <Col className="mx-auto text-white text-center">
+        <Col className="mx-auto text-center">
           <h2 className="text-uppercase">O klubie</h2>
         </Col>
       </Row>
       <Row className="mt-3">
-        <Col className="mx-auto text-white" style={{ textAlign: "justify" }}>
+        <Col className="mx-auto" style={{ textAlign: "justify" }}>
           Jesteśmy agendą kultury, która zajmuje się organizacją imprez
           tanecznych, koncertów, aktywności sportowych oraz innych inicjatyw
           kulturalno-rozrywkowych dla studentów. Ponadto bardzo aktywnie
@@ -29,7 +29,7 @@ export function AboutUsBanner() {
         </Col>
       </Row>
       <Row className="mt-3">
-        <Col className="mx-auto text-white text-center">
+        <Col className="mx-auto text-center">
           <Button className="btn-success text-uppercase">Czytaj dalej</Button>
         </Col>
       </Row>
