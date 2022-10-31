@@ -1,28 +1,10 @@
-@font-face {
-  font-family: "Candice";
-  src: url("/src/assets/Candice.woff") format("woff2");
-  src: url("/src/assets/Candice_woff2.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-html {
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  background-image: url("/src/assets/bajeroland-2019.jpg");
+.welcome-banner-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/src/assets/bajeroland-2019.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#root {
-  height: 100%;
+  height: 500px;
 }
 
 .main {
@@ -32,4 +14,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.bajer-logo-col {
+  height: 300px;
 }

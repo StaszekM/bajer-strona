@@ -1,9 +1,17 @@
 @font-face {
   font-family: "Candice";
-  src: url("/src/assets/Candice.woff") format("woff2");
-  src: url("/src/assets/Candice_woff2.woff") format("woff");
+  src: url("/src/assets/BajerFont_pl.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
 }
 
 .bajer-font {

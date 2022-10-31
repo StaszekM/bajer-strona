@@ -5,7 +5,12 @@ import "../../globalStyles.css";
 
 export function AppNavbar() {
   return (
-    <Navbar className="navbar-dark bg-dark" expand="lg" sticky="top">
+    <Navbar
+      id="app-navbar"
+      className="navbar-dark bg-dark"
+      expand="lg"
+      sticky="top"
+    >
       <Container fluid className="mx-lg-5">
         <Navbar.Brand className="bajer-font fs-2" href="/">
           Bajer
