@@ -1,0 +1,7 @@
+.management-photo-gallery-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../assets/otrzesiny.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
