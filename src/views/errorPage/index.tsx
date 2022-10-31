@@ -11,7 +11,7 @@ export function ErrorPage() {
             <Col>
               <h1 className="display-1">404</h1>
               <p>Nie znaleziono strony.</p>
-              <Button className="btn-success">
+              <Button variant="success">
                 <Link to="/">Powrót</Link>
               </Button>
             </Col>

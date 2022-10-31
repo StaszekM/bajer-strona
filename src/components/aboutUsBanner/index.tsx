@@ -30,7 +30,9 @@ export function AboutUsBanner() {
       </Row>
       <Row className="mt-3">
         <Col className="mx-auto text-center">
-          <Button className="btn-success text-uppercase">Czytaj dalej</Button>
+          <Button variant="success" className="text-uppercase">
+            Czytaj dalej
+          </Button>
         </Col>
       </Row>
     </Container>

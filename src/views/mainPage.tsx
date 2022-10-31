@@ -1,5 +1,6 @@
 import { AboutUsBanner } from "../components/aboutUsBanner";
 import { ManagementPhotoGalleryBanner } from "../components/managementPhotoGalleryBanner";
+import { SpotifyPlaylistBanner } from "../components/spotifyPlaylistBanner";
 import { WelcomeBanner } from "../components/welcomeBanner";
 
 const managementMembers = {
@@ -18,6 +19,7 @@ export function MainPage() {
       <WelcomeBanner />
       <AboutUsBanner />
       <ManagementPhotoGalleryBanner {...managementMembers} />
+      <SpotifyPlaylistBanner />
     </>
   );
 }
