@@ -1,5 +1,6 @@
 import { AboutUsBanner } from "../components/aboutUsBanner";
 import { ManagementPhotoGalleryBanner } from "../components/managementPhotoGalleryBanner";
+import { OurOfferBanner } from "../components/ourOfferBanner";
 import { SpotifyPlaylistBanner } from "../components/spotifyPlaylistBanner";
 import { WelcomeBanner } from "../components/welcomeBanner";
 
@@ -20,6 +21,7 @@ export function MainPage() {
       <AboutUsBanner />
       <ManagementPhotoGalleryBanner {...managementMembers} />
       <SpotifyPlaylistBanner />
+      <OurOfferBanner />
     </>
   );
 }
