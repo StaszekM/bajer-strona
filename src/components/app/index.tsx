@@ -5,6 +5,7 @@ import { Footer } from "../footer";
 import { RouteNotFoundError } from "../../errors/RouteNotFoundError";
 import { PropsWithChildren } from "react";
 import { ErrorPage } from "../../views/errorPage";
+import { ScrollUpButton } from "../scrollUpButton";
 
 function Layout({
   children,
@@ -15,6 +16,7 @@ function Layout({
       <AppNavbar />
       {children}
       {!hideFooter && <Footer />}
+      <ScrollUpButton />
     </>
   );
 }

@@ -1,0 +1,26 @@
+.btn.scroll-up-button {
+  border-radius: 50%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    opacity 0.15s ease-in-out;
+}
+
+.btn.scroll-up-button.hidden {
+  display: none;
+}
+
+.btn.scroll-up-button.visible {
+  animation: append-animate 0.3s linear;
+}
+
+@keyframes append-animate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
