@@ -43,11 +43,11 @@ export function OurOfferBanner() {
               Chętnie odpowiemy na wszystkie Twoje pytania, pomożemy dopełnić
               formalności, a Ty możesz już zapraszać gości.
             </p>
-            <Button variant="success">
-              <Link to="/offer" className=" text-uppercase mt-5 mb-4">
+            <Link to="/offer" className="mt-5 mb-4">
+              <Button variant="success" className="text-uppercase">
                 dowiedz się więcej
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </Col>
         </Row>
       </Container>
