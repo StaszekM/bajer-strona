@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { createBrowserRouter } from "react-router-dom";
 import { RouterProvider } from "react-router";
 import { MainPage } from "./views/mainPage";
-import { ErrorPage } from "./views/errorPage";
+import { RouteNotFoundError } from "./errors/RouteNotFoundError";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -16,9 +16,15 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <App />,
     children: [
       { path: "/", element: <MainPage /> },
-      { path: "*", element: <ErrorPage /> },
+      {
+        path: "*",
+        loader: () => {
+          throw new RouteNotFoundError();
+        },
+      },
     ],
   },
 ]);

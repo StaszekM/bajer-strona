@@ -2,16 +2,38 @@ import { AppNavbar } from "../navbar";
 import "../../globalStyles.css";
 import { Outlet, useRouteError } from "react-router";
 import { Footer } from "../footer";
+import { RouteNotFoundError } from "../../errors/RouteNotFoundError";
+import { PropsWithChildren } from "react";
+import { ErrorPage } from "../../views/errorPage";
 
-function App() {
-  const xd = useRouteError();
-  console.log(xd);
+function Layout({
+  children,
+  hideFooter,
+}: PropsWithChildren<{ hideFooter?: boolean }>) {
   return (
     <>
       <AppNavbar />
-      <Outlet />
-      <Footer />
+      {children}
+      {!hideFooter && <Footer />}
     </>
+  );
+}
+
+function App() {
+  const routeError = useRouteError();
+
+  if (routeError instanceof RouteNotFoundError) {
+    return (
+      <Layout hideFooter>
+        <ErrorPage />
+      </Layout>
+    );
+  }
+
+  return (
+    <Layout>
+      <Outlet />
+    </Layout>
   );
 }
 
