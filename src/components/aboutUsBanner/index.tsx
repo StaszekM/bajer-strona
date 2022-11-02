@@ -2,7 +2,7 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 
 export function AboutUsBanner() {
   return (
-    <Container className="my-4">
+    <Container className="my-4" id="o-nas">
       <Row>
         <Col className="mx-auto text-center">
           <h2 className="text-uppercase">O klubie</h2>
