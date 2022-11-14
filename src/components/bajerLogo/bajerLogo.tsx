@@ -1,4 +1,4 @@
-import bajerLogo from "../../assets/bajer.png";
+import bajerLogo from "assets/bajer.png";
 import Image from "react-bootstrap/Image";
 
 export const BajerLogo = () => (

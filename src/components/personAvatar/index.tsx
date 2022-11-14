@@ -1,5 +1,5 @@
 import { Image } from "react-bootstrap";
-import bajerAnon from "../../assets/BajerAnon.png";
+import bajerAnon from "assets/BajerAnon.png";
 import "./styles.css";
 
 type PersonAvatarProps = {

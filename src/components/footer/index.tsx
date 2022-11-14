@@ -1,7 +1,7 @@
 import { Button, Col, Container, Image, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./styles.css";
-import bajerLogo from "../../assets/bajer.png";
+import bajerLogo from "assets/bajer.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookSquare,

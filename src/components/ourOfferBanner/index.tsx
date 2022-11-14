@@ -1,6 +1,6 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "../../globalStyles.css";
+import "globalStyles.css";
 import "./styles.css";
 
 export function OurOfferBanner() {

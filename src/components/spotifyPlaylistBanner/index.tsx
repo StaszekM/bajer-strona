@@ -1,5 +1,5 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
-import "../../globalStyles.css";
+import "globalStyles.css";
 import "./styles.css";
 
 export function SpotifyPlaylistBanner() {

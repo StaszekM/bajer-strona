@@ -1,5 +1,5 @@
 .error-page-container::before {
-  background-image: url("../../assets/stachudj.jpg");
+  background-image: url("assets/stachudj.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -500px -60px;

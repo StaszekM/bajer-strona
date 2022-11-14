@@ -1,7 +1,7 @@
-import { BajerLogo } from "../bajerLogo/bajerLogo";
 import { Col, Container, Row } from "react-bootstrap";
+import { BajerLogo } from "components/bajerLogo/bajerLogo";
 import "./styles.css";
-import { ScrollDownButton } from "../scrollDownButton";
+import { ScrollDownButton } from "components/scrollDownButton";
 
 export function WelcomeBanner() {
   return (
