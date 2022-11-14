@@ -1,0 +1,6 @@
+.our-offer-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("/src/assets/pizama_party_2022.jpg");
+  background-size: cover;
+  background-position: center;
+}

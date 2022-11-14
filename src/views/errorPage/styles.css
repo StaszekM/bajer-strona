@@ -1,0 +1,20 @@
+.error-page-container::before {
+  background-image: url("assets/stachudj.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -500px -60px;
+  filter: blur(6px);
+  height: calc(100vh - 75px);
+  content: "";
+  display: block;
+  background-position: right;
+}
+
+.error-page-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}

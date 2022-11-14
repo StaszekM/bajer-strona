@@ -1,0 +1,48 @@
+.subfooter {
+  background-color: #000000;
+}
+
+.social-icons a {
+  display: inline-flex;
+  border-radius: 50%;
+}
+
+.btn.social-icon-button {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  transition: background-color 0s;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn.social-icon-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+.btn.social-icon-button:hover {
+  background-color: #f8f9fa;
+}
+
+.btn.social-icon-button.facebook:hover {
+  background-color: #3b5998;
+}
+
+.btn.social-icon-button.instagram:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.btn.social-icon-button.spotify:hover {
+  background-color: #1db954;
+}

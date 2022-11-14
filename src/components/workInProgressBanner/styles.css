@@ -1,0 +1,35 @@
+.work-in-progress {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 50%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media all and (max-width: 600px) {
+  .work-in-progress {
+    width: 100%;
+  }
+}
+
+.work-in-progress .white-text {
+  color: white;
+}
+
+.work-in-progress h1 {
+  font-family: "Candice", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.work-in-progress p {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+}
+
+.work-in-progress a {
+  text-decoration: none;
+  color: cyan;
+}

@@ -1,26 +1,41 @@
-import "./styles.css";
+import { AppNavbar } from "../navbar";
+import "globalStyles.css";
+import { Outlet, useRouteError } from "react-router";
+import { Footer } from "../footer";
+import { RouteNotFoundError } from "errors/RouteNotFoundError";
+import { PropsWithChildren } from "react";
+import { ErrorPage } from "views/errorPage";
+import { ScrollUpButton } from "../scrollUpButton";
+
+function Layout({
+  children,
+  hideFooter,
+}: PropsWithChildren<{ hideFooter?: boolean }>) {
+  return (
+    <>
+      <AppNavbar />
+      {children}
+      {!hideFooter && <Footer />}
+      <ScrollUpButton />
+    </>
+  );
+}
 
 function App() {
+  const routeError = useRouteError();
+
+  if (routeError instanceof RouteNotFoundError) {
+    return (
+      <Layout hideFooter>
+        <ErrorPage />
+      </Layout>
+    );
+  }
+
   return (
-    <div className="main">
-      <div className="container">
-        <h1 className="white-text">Strona w budowie</h1>
-        <p className="white-text">
-          😍 Jeszcze chwila i powstanie tutaj witryna unikalnego i przebojowego
-          klubu studenckiego, jakiego świat nie widział!
-        </p>
-        <p className="white-text">
-          👉 Tymczasem zapraszamy Cię na naszego&nbsp;
-          <a
-            href="https://www.facebook.com/Klub.Studencki.Bajer/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Facebooka!
-          </a>
-        </p>
-      </div>
-    </div>
+    <Layout>
+      <Outlet />
+    </Layout>
   );
 }
 

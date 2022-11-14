@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Candice";
+  src: url("/src/assets/BajerFont_pl.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #222222;
+}
+
+#root {
+  height: 100%;
+  background-color: #222222;
+}
+
+.bajer-font {
+  font-family: "Candice", sans-serif;
+}
+
+body a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body a:hover {
+  color: inherit;
+}

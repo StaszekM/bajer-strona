@@ -1,0 +1,12 @@
+.welcome-banner-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/src/assets/bajeroland-2019.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+}
+
+.bajer-logo-col {
+  max-height: 70vh;
+}
