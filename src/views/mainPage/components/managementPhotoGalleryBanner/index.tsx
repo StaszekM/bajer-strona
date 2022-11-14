@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import { PersonAvatar } from "../personAvatar";
+import { PersonAvatar } from "components/personAvatar";
 import "./styles.css";
 
 type SinglePersonForAvatar = { title: string; subtitle?: string; src?: string };

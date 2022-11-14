@@ -1,7 +1,7 @@
-import { AboutUsBanner } from "components/aboutUsBanner";
-import { ManagementPhotoGalleryBanner } from "components/managementPhotoGalleryBanner";
-import { OurOfferBanner } from "components/ourOfferBanner";
-import { SpotifyPlaylistBanner } from "components/spotifyPlaylistBanner";
+import { AboutUsBanner } from "./components/aboutUsBanner";
+import { ManagementPhotoGalleryBanner } from "./components/managementPhotoGalleryBanner";
+import { OurOfferBanner } from "./components/ourOfferBanner";
+import { SpotifyPlaylistBanner } from "./components/spotifyPlaylistBanner";
 import { WelcomeBanner } from "./components/welcomeBanner";
 
 export const managementMembers = {
